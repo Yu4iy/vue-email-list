@@ -1,0 +1,46 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.loader{
+	margin: 20px;
+	position: relative;
+
+	}
+.loader::before{
+	content: '';
+	position: absolute;
+	bottom: 2.5px;
+	right: -3px;
+	width: 1.5px;
+	height: 2px;
+	background-color: black;
+	animation: dot2 1s infinite;
+}
+.loader::after{
+	content: '';
+	position: absolute;
+	bottom: 2.5px;
+	right: -7px;
+	width: 1.5px;
+	height: 2px;
+	background-color: black;
+	animation: dot1 1s infinite;
+	}
+
+	@keyframes dot2 {
+		0%   {background-color: black;}
+		100%   {background-color: transparent;}
+
+	 }
+	 
+	 @keyframes dot1 {
+		0%   {background-color: transparent;}
+		100%   {background-color: black;}
+
+
+
+	 }
+	 
+	
